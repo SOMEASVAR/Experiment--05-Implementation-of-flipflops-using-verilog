@@ -118,7 +118,9 @@ RegisterNumber:
 
 
 
-### RTL LOGIC FOR FLIPFLOPS 
+### RTL LOGIC FOR FLIPFLOPS
+![image](https://github.com/SOMEASVAR/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93434149/6d3d1085-2fc2-4f9b-8738-c13a95a2499e)
+
 
 
 

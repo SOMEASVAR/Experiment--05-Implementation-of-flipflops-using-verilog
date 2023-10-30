@@ -1,4 +1,4 @@
-# Experiment--05-Implementation-of-flipflops-using-verilog
+# Experiment 05 Implementation of flipflops using verilog
 ### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
@@ -107,11 +107,24 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 ### PROGRAM 
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: SOMEASVAR R
+RegisterNumber: 212221230103
+```
+```
+module flipflops(S,R,Q,Qbar,CLK);
+input S,R,CLK;
+output reg Q,Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge CLK)
+begin
+Q=S|(Q&(~R));
+Qbar=R|(Qbar&(~S));
+end
+endmodule
+```
 
 
 
@@ -132,6 +145,7 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+![image](https://github.com/SOMEASVAR/Experiment--05-Implementation-of-flipflops-using-verilog/assets/93434149/8f4e17d1-39e8-4b78-b19e-4cae4145fd1c)
 
 
 
@@ -140,3 +154,4 @@ RegisterNumber:
 
 
 ### RESULTS 
+We have successfully implemented all the flipflops using verilog and validating their functionality using their functional tables.
